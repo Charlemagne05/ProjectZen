@@ -1,109 +1,141 @@
 # ProjectZen
 
-## 📚 Table des Matières
+## 🪧 À propos
 
-- [📝 Description](#-description)
-- [⭐ Fonctionnalité Clé](#-fonctionnalité-clé)
-- [🔗 Lien GitHub](#-lien-github)
-- [⚙️ Commande d'Installation](#-commande-dinstallation)
-- [🚀 Commande de Démarrage](#-commande-de-démarrage)
-- [🖥️ Prérequis](#-prérequis)
-- [💻 Langages Utilisés](#-langages-utilisés)
-- [🔧 Frameworks et Bibliothèques](#-frameworks-et-bibliothèques)
-- [🔁 Intégration Continue](#-intégration-continue)
-- [🚀 Plateforme de Déploiement](#-plateforme-de-déploiement)
-- [🧾 Licence](#-licence)
-- [🤝 Contribution](#-contribution)
-- [📚 Documentation Externe](#-documentation-externe)
-- [🕒 Gestion des Versions](#-gestion-des-versions)
-- [📌 Commande pour Ajouter une Tâche](#-commande-pour-ajouter-une-tâche)
-- [🛠️ Problèmes Communs](#-problèmes-communs)
-- [🐛 Rapport de Bugs](#-rapport-de-bugs)
-- [✅ Tests](#-tests)
-- [🌐 Outils de Déploiement](#-outils-de-déploiement)
-- [🔐 Variables d'Environnement Requises](#-variables-denvironnement-requises)
+ProjectZen est une plateforme web pensée pour simplifier la gestion de projets des petites et moyennes équipes.
+Elle permet de suivre l’avancement, d’organiser les tâches et de fluidifier la communication, avec un outil léger, flexible et facile à utiliser.
 
 ---
 
-## 📝 Description  
-ProjectZen est une application web conçue pour simplifier la gestion de projets, idéale pour les équipes de petite à moyenne taille. Elle permet de suivre l’avancement des tâches, de gérer les responsabilités, et de fluidifier la communication.
+## 📚 Table des matières
 
-## ⭐ Fonctionnalité Clé  
-- Tableaux de bord personnalisables
+- 🪧 À propos
+- 📦 Prérequis
+- 🚀 Installation
+- 🛠️ Utilisation
+- 🤝 Contribution
+- 🏗️ Construit avec
+- 📚 Documentation
+- 🏷️ Gestion des versions
+- 📝 Licence
 
-## 🔗 Lien GitHub  
-[https://github.com/ProjectZen/ProjectZen.git](https://github.com/ProjectZen/ProjectZen.git)
+---
 
-## ⚙️ Commande d'Installation  
+## 📦 Prérequis
+
+Avant de démarrer, assurez-vous d'avoir :
+
+- [Node.js v14 ou supérieur](https://nodejs.org/)
+- [npm](https://docs.npmjs.com/)
+- Un navigateur web récent (Chrome, Firefox, Edge...)
+- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) pour le déploiement
+- Variables d’environnement :  
+  - `DB_USER` : nom d'utilisateur de la base de données  
+  - `DB_PASS` : mot de passe de la base de données
+
+---
+
+## 🚀 Installation
+
+Cloner le dépôt :
+```bash
+git clone https://github.com/ProjectZen/ProjectZen.git
+cd ProjectZen
 ```
+
+Installer les dépendances :
+```bash
 npm install
 ```
 
-## 🚀 Commande de Démarrage  
-```
+---
+
+## 🛠️ Utilisation
+
+### Démarrage de l'application
+```bash
 npm start
 ```
+Accéder ensuite à : [http://localhost:8080](http://localhost:8080)
 
-Accéder à l'application via : [http://localhost:8080](http://localhost:8080)
-
-## 🖥️ Prérequis  
-- Navigateur web moderne  
-- Node.js v14 ou supérieur  
-- npm
-
-## 💻 Langages Utilisés  
-- JavaScript (ES6+)  
-- HTML5  
-- CSS3
-
-## 🔧 Frameworks et Bibliothèques  
-- React (Front-end)  
-- Node.js (Back-end)  
-- Express.js (Serveur)
-
-## 🔁 Intégration Continue  
-- Travis CI  
-- [Documentation Travis CI](https://travis-ci.org/docs)
-
-## 🚀 Plateforme de Déploiement  
-- Heroku  
-- [Documentation Heroku](https://devcenter.heroku.com/)
-
-## 🧾 Licence  
-MIT
-
-## 🤝 Contribution  
-1. Fork le dépôt  
-2. Crée une branche avec ta fonctionnalité ou correction  
-3. Soumets une pull request pour révision
-
-## 📚 Documentation Externe  
-- [React – Documentation Officielle](https://reactjs.org/docs/getting-started.html)
-
-## 🕒 Gestion des Versions  
-Utilisation de **SemVer** pour la gestion des versions.  
-Consultez les tags du dépôt pour voir les versions disponibles.  
-> Un correctif a été récemment ajouté pour une potentielle fraude dans l’historique de commits.
-
-## 📌 Commande pour Ajouter une Tâche  
-```
+### Ajouter une tâche
+```bash
 npm run add-task "Nom de la Tâche"
 ```
 
-## 🛠️ Problèmes Communs  
-- Si `npm start` échoue, vérifiez que tous les modules sont bien installés avec `npm install`.
-
-## 🐛 Rapport de Bugs  
-- Ouvrez une *issue* sur le dépôt GitHub avec les détails du problème.
-
-## ✅ Tests  
-```
+### Lancer les tests
+```bash
 npm test
 ```
 
-## 🌐 Outils de Déploiement  
-- Déploiement via Heroku CLI
+### Problèmes courants
 
-## 🔐 Variables d'Environnement Requises  
-- `DB_USER` : Nom d’utilisateur de la base de données  
-- `DB_PASS` : Mot de passe de la base de données
+- Si `npm start` ne fonctionne pas, vérifiez que tous les modules sont installés avec `npm install`.
+
+---
+
+## 🤝 Contribution
+
+### Étapes pour contribuer :
+1. Fork le dépôt
+2. Crée une branche :  
+   ```bash
+   git checkout -b feature/nom-fonctionnalité
+   ```
+3. Apporte tes modifications
+4. Commit tes changements :
+   ```bash
+   git commit -m "Ajout de la fonctionnalité : nom"
+   ```
+5. Push ta branche :
+   ```bash
+   git push origin feature/nom-fonctionnalité
+   ```
+6. Ouvre une pull request
+
+---
+
+## 🏗️ Construit avec
+
+### Langages & Frameworks
+
+- **JavaScript (ES6+)** : langage principal  
+- **HTML5 / CSS3** : structure et style  
+- **[React](https://reactjs.org/)** : front-end  
+- **[Node.js](https://nodejs.org/)** : back-end  
+- **[Express.js](https://expressjs.com/)** : serveur
+
+### Outils
+
+#### CI
+
+- **[Travis CI](https://travis-ci.org/)** : intégration continue automatisée  
+  Permet d’exécuter les tests à chaque push et pull request.
+
+#### Déploiement
+
+- **[Heroku](https://devcenter.heroku.com/)** : hébergement de l’application  
+  Utilise le Heroku CLI pour déployer directement depuis le terminal.
+
+---
+
+## 📚 Documentation
+
+- [Documentation officielle React](https://reactjs.org/docs/getting-started.html)
+- [Travis CI Docs](https://travis-ci.org/docs)
+- [Heroku CLI Docs](https://devcenter.heroku.com/articles/heroku-cli)
+
+---
+
+## 🏷️ Gestion des versions
+
+Ce projet suit la [gestion sémantique de version (SemVer)](https://semver.org/lang/fr/).
+
+Les versions sont disponibles via la section [Releases du dépôt GitHub](https://github.com/ProjectZen/ProjectZen/releases).  
+> Un correctif lié à une fraude a été appliqué dans l'historique de commits.
+
+---
+
+## 📝 Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](./LICENSE) pour plus d'informations.
